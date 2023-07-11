@@ -1,0 +1,19 @@
+package polymorphism;
+import java.io.*;
+import java.util.Scanner;
+
+public class employee
+{
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter salary: ");
+        double bp = in.nextDouble();
+        double da = 0.12* bp;
+        double hra = 0.13 * bp;
+        double pf = 0.15 * bp;
+        double gp = bp + da + hra;
+        
+        System.out.println("Gross Pay = " + gp);
+        
+    }
+}
